@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" />
+   <title>A BASIC FURNITURE WEBSITE</title>
+   </head>
+   	<script src="js/jquery.min.js" ></script>
+	<script src="js/jquery.poshytip.min.js"></script>
+	<link href="css/jquery-editable.css" rel="stylesheet"/>
+	<link href="js/tip-yellowsimple/tip-yellowsimple.css" rel="stylesheet"/>
+	<script src="js/jquery-editable-poshytip.min.js"></script>
+   <style type="text/css">
+	body {
+		 width: 800px;
+		 margin: 0px auto;
+	}
+	body header {
+		display:block;
+		font-size:2em;
+		color:#000fff;
+	}
+	nav {
+		display:block;
+		background-color:#000fff;
+		color:#ffffff;
+		overflow:hidden;
+		margin-bottom:1.2em;
+		padding: 0.6em;
+	}
+	nav li {
+		float:left;
+		list-style: none;
+		margin-right: 0.6em;
+	}
+	
+	aside {
+		float:left;
+		margin-right:1em;
+		overflow:hidden;
+	}
+	
+	article {
+		float: right;
+		width: 70%;
+		padding: 0.6em;
+	}
+	footer {position: relative;
+	margin-top: -30px; /* negative value of footer height */
+	height: 30px;
+	clear:both;
+	background-color:#ECECEC;
+	padding:0.8em;
+	} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+   </style>
+<script type="text/javascript">
+$(document).ready(function(){
+$('[data-i18n]').each(function(){
+if($(this).text().length > 60) {
+	$(this).addClass("edit_area");
+}else{
+	$(this).addClass("edit");
+}
+});
+$('.edit').editable({type:'text',className: 'tip-yellowsimple'});
+$('.edit_area').editable({type:'textarea',className: 'tip-yellowsimple'});
+});
+</script>
+<body>
+   <header><h1 data-i18n='title'>Bedroom furnitures</h1></header>
+   <nav>
+	  <ul>
+         <li data-i18n='menu-home'>Home</li>
+         <li data-i18n='menu-aboutus'>About us</li>
+         <li data-i18n='menu-contact'>Contact</li>
+      </ul>
+	</nav>
+
+   <article>
+      <header data-i18n='home-buyour'>Buy our lovely furnitures</header>
+
+      <section>
+         <p data-i18n='home-wideselection'>A wide selection with the most beautiful designs.</p>
+      </section>
+
+      <section data-i18n='home-returnmoney'>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque ante, elementum ut dapibus et, egestas sit amet mi. Nam congue in elit vitae adipiscing. Nulla blandit mauris at diam luctus, vitae lobortis neque adipiscing. Pellentesque dignissim, odio nec aliquam molestie, risus quam varius turpis, in malesuada massa augue vitae dolor. Fusce et mauris leo. Morbi rutrum purus ut leo viverra, a aliquet metus sodales. Proin id lectus non ante egestas tristique. Praesent dictum sem nulla, sed molestie purus porttitor pulvinar. Quisque auctor tincidunt commodo.</p>
+
+<p>Pellentesque turpis mi, sagittis vel accumsan sed, ullamcorper vitae lectus. Morbi nibh massa, porttitor in lacinia quis, fermentum sed nibh. Ut placerat imperdiet ultrices. Vivamus lacus massa, dapibus non condimentum id, rutrum vitae metus. Donec semper mattis felis id blandit. Sed vitae lacinia felis. Suspendisse aliquet posuere justo, at fringilla dolor pharetra ut. Donec eget nisi volutpat, posuere urna eu, porta diam. Sed vel placerat enim.</p>
+
+<p>Fusce tortor orci, lobortis non tempus non, dictum a sem. Mauris vitae elit erat. Etiam ullamcorper, massa quis sagittis cursus, justo massa dictum lectus, eget lacinia sapien orci sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, ante at condimentum tincidunt, ante mi tincidunt odio, at molestie ante sapien a lorem. Aenean tincidunt adipiscing varius. Donec scelerisque sem ut turpis pulvinar, sit amet imperdiet eros tincidunt. Ut fermentum turpis eu cursus laoreet. Etiam quis neque elementum, elementum ligula non, commodo elit. Vestibulum eu libero est. Curabitur posuere, nisi eu faucibus euismod, leo risus posuere erat, sit amet gravida lorem ipsum a ipsum. Suspendisse vulputate aliquet sem nec tincidunt. Etiam at tempus orci. Morbi fermentum, lacus quis semper commodo, ipsum tortor iaculis purus, quis faucibus purus magna non mauris. In pharetra nunc sapien, at tristique nunc suscipit in.</p>
+
+<p>Sed fermentum, turpis eget accumsan malesuada, quam sapien euismod mi, sit amet lacinia risus tortor at massa. Phasellus nec posuere ligula, at mollis enim. Proin sodales magna vel nulla ultricies, in commodo erat cursus. Etiam libero enim, feugiat lacinia purus sed, accumsan elementum purus. Maecenas nibh lectus, varius vitae mi quis, semper malesuada massa. Curabitur non tincidunt ante, ut bibendum est. Aliquam vestibulum dignissim sodales. Curabitur quis nisi ut est imperdiet accumsan molestie id mi. Vivamus eu ligula mauris. Vestibulum rutrum suscipit ante, vel adipiscing massa tristique at. Nulla facilisi. Proin ut tellus tellus. Nullam ut mauris tortor. Quisque consectetur commodo augue, sed tempus arcu laoreet vel.</p>
+
+<p>Suspendisse interdum metus vitae velit fermentum hendrerit. Etiam eget porttitor nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris pretium sem nibh, in rhoncus libero lobortis vel. Pellentesque vehicula leo a ante lacinia fringilla. In hac habitasse platea dictumst. Morbi elementum rutrum dapibus. Donec mattis augue non odio auctor, quis vulputate metus tincidunt. Pellentesque nec luctus libero. Sed lacinia, mi id malesuada tincidunt, lacus odio facilisis nunc, ac faucibus enim massa eu nisi. Praesent nec semper libero, vel euismod quam. Suspendisse blandit, turpis ac sollicitudin rhoncus, magna orci pretium sapien, vel euismod tellus nulla in eros. Ut ut posuere enim, sed posuere dui. Mauris in accumsan nisl. Sed ullamcorper gravida magna vel molestie.</p>
+      </section>
+   </article>
+
+   <aside>
+	  <ul>
+         <li data-i18n='show-Wardrobes'>Wardrobes</li>
+         <li data-i18n='show-Beds'>Beds</li>
+         <li data-i18n='show-Lamps'>Lamps</li>
+         <li data-i18n='show-Chest'>Chest of drawers</li>
+		 <li data-i18n='show-Mirrors'>Mirrors</li>
+      </ul>
+	</aside>
+
+   <footer><center>@Alberto León</center></footer>
+</body>
+</html>
